@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_ui/pages/login_page.dart';
 
 class SignUpPage extends StatefulWidget {
   static const String id = "sign_up_page";
@@ -138,9 +139,11 @@ class _SignUpPageState extends State<SignUpPage> {
                         height: 35,
                       ),
 
-                      // #login_button
+                      // #signup_button
                       MaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, LoginPage.id);
+                        },
                         height: 45,
                         minWidth: 240,
                         shape: const StadiumBorder(),

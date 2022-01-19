@@ -196,14 +196,14 @@ class _LoginPageState extends State<LoginPage> {
                             style: TextStyle(color: Colors.black, fontSize: 14),
                             children: [
                               TextSpan(
-                                text: "#PDP ",
+                                text: "PDP ",
                                 style: TextStyle(color: Colors.blue),
                                 recognizer: TapGestureRecognizer()..onTap = (){
                                   fireToast("Hash tag One");
                                 }
                               ),
                               TextSpan(
-                                text: "#Academy ",
+                                text: "Academy ",
                                 style: TextStyle(color: Colors.blue),
                                 recognizer: TapGestureRecognizer()..onTap = (){
                                   fireToast('Hash tag Two');
